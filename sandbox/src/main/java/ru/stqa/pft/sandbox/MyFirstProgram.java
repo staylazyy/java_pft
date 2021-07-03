@@ -15,7 +15,7 @@ public class MyFirstProgram {
     Rectangle r = new Rectangle(4,6);
     System.out.println("Площадь прямоугольника со сторонами " + r.a + " и " + r.b + " = " + r.area());
 
-    //Домашка
+    //Домашка - функция считает расстояние между двумя точками на плоскости
     Point p = new Point(-1,3,6,2);
     System.out.println("Расстояние между точками A(" + p.p1 + ";" + p.p2 + ") и B(" + p.p3 + ";" + p.p4 + ") на плоскости = " + p.distance());
 
