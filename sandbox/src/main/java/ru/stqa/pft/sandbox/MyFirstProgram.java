@@ -7,26 +7,22 @@ public class MyFirstProgram {
     hello("user");
     hello("Danzo");
 
-    double l = 5;
-    System.out.println("Площадь квадрата со стороной " + l + " = " + area(l));
+    //Считаем площадь квадрата
+    Square s = new Square(5);
+    System.out.println("Площадь квадрата со стороной " + s.l + " = " + s.area());
 
-    double a = 4;
-    double b = 7;
-    System.out.println("Площадь прямоугольника со сторонами " + a + " и " + b + " = " + area(a,b));
+    //Считаем площадь прямоугольника
+    Rectangle r = new Rectangle(4,6);
+    System.out.println("Площадь прямоугольника со сторонами " + r.a + " и " + r.b + " = " + r.area());
 
+    //Домашка
+    Point p = new Point(-1,3,6,2);
+    System.out.println("Расстояние между точками A(" + p.p1 + ";" + p.p2 + ") и B(" + p.p3 + ";" + p.p4 + ") на плоскости = " + p.distance());
 
   }
 
   public static void hello(String somebody) {
     System.out.println("Hello, " + somebody + "!");
-  }
-
-  public static double area(double len) {
-    return len * len;
-  }
-
-  public static double area(double a, double b) {
-    return a * b;
   }
 
 }
