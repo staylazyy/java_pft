@@ -35,7 +35,7 @@ public class ApplicationManager {
     }
 
     baseUrl = "https://www.google.com/";
-    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+    driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
     contactHelper = new ContactHelper(driver);
     groupHelper = new GroupHelper(driver);
     navigationHelper = new NavigationHelper(driver);

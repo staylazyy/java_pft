@@ -5,12 +5,18 @@ public class ContactData {
   private final String secondname;
   private final String nickname;
   private final String phoneMobile;
+  private String group;
 
-  public ContactData(String firstname, String secondname, String nickname, String phoneMobile) {
+  public String getGroup() {
+    return group;
+  }
+
+  public ContactData(String firstname, String secondname, String nickname, String phoneMobile, String group) {
     this.firstname = firstname;
     this.secondname = secondname;
     this.nickname = nickname;
     this.phoneMobile = phoneMobile;
+    this.group = group;
   }
 
   public String getFirstname() {
