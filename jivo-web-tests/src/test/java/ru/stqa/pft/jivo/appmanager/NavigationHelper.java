@@ -3,22 +3,22 @@ package ru.stqa.pft.jivo.appmanager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class NavigationHelper {
+public class NavigationHelper extends HelperBase {
   private WebDriver driver;
 
   public NavigationHelper(WebDriver driver) {
-    this.driver = driver;
+    super(driver);
   }
 
   public void gotoGroupPage() {
-    driver.findElement(By.linkText("groups")).click();
+    click(By.linkText("groups"));
   }
 
   public void gotoHome() {
-    driver.findElement(By.linkText("home")).click();
+    click(By.linkText("home"));
   }
 
   public void gotoNewContactPage() {
-    driver.findElement(By.linkText("add new")).click();
+    click(By.linkText("add new"));
   }
 }

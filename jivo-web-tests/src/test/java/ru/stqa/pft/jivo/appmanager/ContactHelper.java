@@ -8,34 +8,26 @@ import ru.stqa.pft.jivo.model.ContactData;
 
 import static org.testng.Assert.assertTrue;
 
-public class ContactHelper {
-  WebDriver driver;
+public class ContactHelper extends HelperBase {
   private boolean acceptNextAlert = true;
 
   public ContactHelper(WebDriver driver) {
-    this.driver = driver;
+    super(driver);
   }
 
   public void submitContactCreation() {
-    driver.findElement(By.xpath("//div[@id='content']/form/input[21]")).click();
+    click(By.xpath("//div[@id='content']/form/input[21]"));
   }
 
   public void fillContactForm(ContactData contactData) {
-    driver.findElement(By.name("firstname")).click();
-    driver.findElement(By.name("firstname")).clear();
-    driver.findElement(By.name("firstname")).sendKeys(contactData.getFirstname());
-    driver.findElement(By.name("lastname")).clear();
-    driver.findElement(By.name("lastname")).sendKeys(contactData.getSecondname());
-    driver.findElement(By.name("nickname")).click();
-    driver.findElement(By.name("nickname")).clear();
-    driver.findElement(By.name("nickname")).sendKeys(contactData.getNickname());
-    driver.findElement(By.name("mobile")).click();
-    driver.findElement(By.name("mobile")).clear();
-    driver.findElement(By.name("mobile")).sendKeys(contactData.getPhoneMobile());
+    type(By.name("firstname"), contactData.getFirstname());
+    type(By.name("lastname"),contactData.getSecondname());
+    type(By.name("nickname"), contactData.getNickname());
+    type(By.name("mobile"),contactData.getPhoneMobile());
   }
 
   public void deleteSelectedContacts() {
-    driver.findElement(By.xpath("//input[@value='Delete']")).click();
+    click(By.xpath("//input[@value='Delete']"));
   }
 
   public void acceptDeletionAlert() {
@@ -43,7 +35,7 @@ public class ContactHelper {
   }
 
   public void selectContact() {
-    driver.findElement(By.name("selected[]")).click();
+    click(By.name("selected[]"));
   }
 
   private boolean isAlertPresent() {
@@ -70,4 +62,11 @@ public class ContactHelper {
     }
   }
 
+  public void initContactModification() {
+    click(By.xpath("//*[@id=\"maintable\"]/tbody/tr[2]/td[8]/a"));
+  }
+
+  public void submitContactModification() {
+    click(By.name("update"));
+  }
 }
