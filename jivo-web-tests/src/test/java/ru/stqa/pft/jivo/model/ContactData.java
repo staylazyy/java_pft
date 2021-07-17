@@ -1,4 +1,4 @@
-package ru.stqa.pft.jivo;
+package ru.stqa.pft.jivo.model;
 
 public class ContactData {
   private final String firstname;

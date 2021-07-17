@@ -1,4 +1,4 @@
-package ru.stqa.pft.jivo;
+package ru.stqa.pft.jivo.model;
 
 public class GroupData {
   private final String name;
