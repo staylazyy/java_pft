@@ -28,7 +28,7 @@ public class HelperBase {
 
   protected boolean isElementPresent(By locator) {
     try {
-      driver.findElement(By.name("new_group"));
+      driver.findElement(locator);
       return true;
     } catch (NoSuchElementException ex) {
         return false;
