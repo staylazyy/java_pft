@@ -39,8 +39,8 @@ public class ContactHelper extends HelperBase {
     assertTrue(closeAlertAndGetItsText().matches("^Delete 1 addresses[\\s\\S]$"));
   }
 
-  public void selectContact() {
-    click(By.name("selected[]"));
+  public void selectContact(int index) {
+    driver.findElements(By.name("selected[]")).get(index).click();
   }
 
   private boolean isAlertPresent() {
@@ -67,8 +67,8 @@ public class ContactHelper extends HelperBase {
     }
   }
 
-  public void initContactModification() {
-    click(By.xpath("//*[@id=\"maintable\"]/tbody/tr[2]/td[8]/a"));
+  public void initContactModification(int index) {
+    driver.findElements(By.cssSelector("img[title='Edit']")).get(index).click();
   }
 
   public void submitContactModification() {
