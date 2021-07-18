@@ -17,3 +17,4 @@ gradle-app.setting
 sandbox/build/tmp/compileJava/previous-compilation-data.bin
 
 jivo-web-tests/build/
+sandbox/build/
