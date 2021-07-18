@@ -96,10 +96,12 @@ public class ContactHelper extends HelperBase {
     List<ContactData> contacts = new ArrayList<ContactData>();
     List<WebElement> elements = driver.findElements(By.cssSelector("tr[name=\"entry\"]"));
     for (WebElement element: elements) {
-      String firstname = driver.findElement(By.cssSelector("tr[name=\"entry\"] > td:nth-child(2)")).getText();
-      String secondname = driver.findElement(By.cssSelector("tr[name=\"entry\"] > td:nth-child(3)")).getText();
-      String phoneMobile = driver.findElement(By.cssSelector("tr[name=\"entry\"] > td:nth-child(6)")).getText();
-      ContactData contact = new ContactData(firstname, secondname, null,phoneMobile,null);
+      int id = Integer.parseInt(element.findElement(By.tagName("input")).getAttribute("id"));
+      String firstname = element.findElement(By.cssSelector("td:nth-child(3)")).getText();
+      String secondname = element.findElement(By.cssSelector("td:nth-child(2)")).getText();
+      String phoneMobile = element.findElement(By.cssSelector("td:nth-child(6)")).getText();
+
+      ContactData contact = new ContactData(id, firstname, secondname, null,phoneMobile,null);
       contacts.add(contact);
     }
     return contacts;
