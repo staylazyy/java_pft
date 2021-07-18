@@ -2,7 +2,6 @@ package ru.stqa.pft.jivo.tests;
 
 import org.testng.annotations.Test;
 import ru.stqa.pft.jivo.model.ContactData;
-import ru.stqa.pft.jivo.model.GroupData;
 
 public class ContactDeletionTest extends TestBase {
 
