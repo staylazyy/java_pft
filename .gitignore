@@ -16,4 +16,4 @@ gradle-app.setting
 .idea/codeStyles/codeStyleConfig.xml
 sandbox/build/tmp/compileJava/previous-compilation-data.bin
 
-jivo-web-tests/build
+jivo-web-tests/build/
