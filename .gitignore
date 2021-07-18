@@ -17,24 +17,3 @@ gradle-app.setting
 sandbox/build/tmp/compileJava/previous-compilation-data.bin
 
 jivo-web-tests/build/
-jivo-web-tests/build/reports/tests/test/classes/ru.stqa.pft.jivo.tests.ContactModificationTest.html
-jivo-web-tests/build/reports/tests/test/index.html
-jivo-web-tests/build/reports/tests/test/packages/ru.stqa.pft.jivo.tests.html
-jivo-web-tests/build/test-results/test/binary/output.bin
-jivo-web-tests/build/test-results/test/binary/output.bin.idx
-jivo-web-tests/build/test-results/test/binary/results.bin
-jivo-web-tests/build/test-results/test/TEST-ru.stqa.pft.jivo.tests.ContactModificationTest.xml
-jivo-web-tests/build/reports/tests/test/index.html
-jivo-web-tests/build/reports/tests/test/packages/ru.stqa.pft.jivo.tests.html
-jivo-web-tests/build/test-results/test/binary/output.bin
-jivo-web-tests/build/test-results/test/binary/results.bin
-jivo-web-tests/build/reports/tests/test/index.html
-jivo-web-tests/build/reports/tests/test/packages/ru.stqa.pft.jivo.tests.html
-jivo-web-tests/build/test-results/test/binary/output.bin
-jivo-web-tests/build/test-results/test/binary/results.bin
-jivo-web-tests/build/tmp/compileTestJava/previous-compilation-data.bin
-jivo-web-tests/build/test-results/test/binary/output.bin
-jivo-web-tests/build/reports/tests/test/index.html
-jivo-web-tests/build/test-results/test/binary/output.bin
-jivo-web-tests/build/test-results/test/binary/results.bin
-*.bin
